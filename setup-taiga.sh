@@ -1,6 +1,6 @@
 #! bin/bash
 #this MUST be the hostname (host:port if needed) through witch you externally access your taiga (what you type IN your browser)
-EXTERNAL_HOST=localhost
+EXTERNAL_HOST=docker.assemblee-nationale.fr
 
 su - taiga <<EOF 
 export DEBIAN_FRONTEND="noninteractive apt-get autoremove"
@@ -34,7 +34,9 @@ source ./scripts/setup-rabbitmq.sh
 EOF
 
 # adding async to local.py
+
 cat <<'EOF' >> /home/taiga/taiga-back/settings/local.py
+
 from .celery import *
 
 BROKER_URL = 'amqp://guest:guest@localhost:5672//'
