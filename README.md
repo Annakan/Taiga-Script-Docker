@@ -8,9 +8,8 @@ The docker is based on the great phusion/baseimage-docker image that share and h
 
 I tried **not** to fork the taiga-script project, to be able to go with the flow of its evolution.
 
-So this is not a "stable build", meaning build results can change with the evolution of taiga-script (Fork taiga script and modify setup-taiga.sh accordingly) and taiga itself.
-
-If you feel uncomfortable with that, but given that taiga (and taiga-scripts) is "in development" ... makes little sense)
+So this is not a "stable build", meaning build results can change with the evolution of taiga-script and taiga itself.
+Fork taiga script and modify setup-taiga.sh accordingly if you feel uncomfortable with that, but given that taiga (and taiga-scripts) is "in development" ... makes little sense)
 
 That's also why we have some "sed .." changes in setup-taiga.sh
 
